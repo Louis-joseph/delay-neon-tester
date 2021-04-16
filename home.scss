@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'blacks_roobinregular';
+    src: url('font/blacks_roobin-webfont.woff2') format('woff2'),
+         url('font/blacks_roobin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #100B00;
+}
+
+ul {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+        list-style: none;
+        color: #3B341F;
+        font-family: "blacks_roobinregular";
+        font-size: 90px;
+        letter-spacing: 20px;
+        animation: neon 1.4s linear infinite;
+    }
+
+    @keyframes neon {
+        0% {
+            color: #3B341F;
+            text-shadow: none;
+        }
+        90% {
+            color: #6E6254;
+            text-shadow: none;
+        }
+        100% {
+            color: #f9ca24;
+            text-shadow: 0 0 7px #f9ca24, 0 0 50px #f0932b;
+        }
+    }
+
+    li:nth-child(1) {
+        animation-delay: .3s;
+    }
+    li:nth-child(2) {
+        animation-delay: .60s;
+    }
+    li:nth-child(3) {
+        animation-delay: .3s;
+    }
+    li:nth-child(4) {
+        animation-delay: .5s;
+    }
+    li:nth-child(5) {
+        animation-delay: .10s;
+    }
+    li:nth-child(6) {
+        animation-delay: .2s;
+    }
+    li:nth-child(7) {
+        animation-delay: .6s;
+    }
+    li:nth-child(8) {
+        animation-delay: .9s;
+    }
+    li:nth-child(9) {
+        animation-delay: .40s;
+    }
+}
